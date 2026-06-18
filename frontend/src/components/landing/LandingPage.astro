@@ -1,0 +1,117 @@
+---
+---
+
+<main class="min-h-screen relative overflow-hidden bg-[#09090b] text-white">
+  <!-- Glowing effects -->
+  <div class="absolute top-[20%] left-[10%] w-[40vw] h-[40vw] rounded-full bg-brand-500/10 blur-[120px] mix-blend-screen pointer-events-none animate-pulse-slow"></div>
+  <div class="absolute bottom-[10%] right-[10%] w-[30vw] h-[30vw] rounded-full bg-blue-500/10 blur-[100px] mix-blend-screen pointer-events-none animate-pulse-slow" style="animation-delay: 2s;"></div>
+
+  <section class="mx-auto grid min-h-[92vh] max-w-7xl grid-cols-1 content-center gap-16 px-6 py-12 sm:px-10 lg:grid-cols-[1fr_1fr] lg:px-14 relative z-10">
+    <div class="flex flex-col justify-center">
+      <nav class="absolute top-0 left-0 w-full p-6 sm:p-10 lg:p-14 flex items-center justify-between z-20">
+        <a href="/" class="inline-flex items-center gap-3 text-lg font-bold tracking-wide">
+          <div class="relative grid h-10 w-10 place-items-center rounded-xl bg-gradient-to-br from-brand-400 to-brand-600 text-white shadow-[0_0_15px_rgba(16,185,129,0.4)]">
+            <span class="relative z-10 font-black">FC</span>
+            <div class="absolute inset-0 rounded-xl bg-brand-500 blur-sm opacity-50"></div>
+          </div>
+          Football Chatbot
+        </a>
+        <div class="flex items-center gap-4">
+          <a href="/login" class="text-sm font-semibold text-zinc-300 hover:text-white transition-colors duration-300">Log in</a>
+          <a href="/register" class="rounded-full bg-white/10 px-5 py-2.5 text-sm font-semibold text-white backdrop-blur-md transition-all duration-300 hover:bg-white/20 hover:shadow-[0_0_20px_rgba(255,255,255,0.1)] border border-white/10">Register</a>
+        </div>
+      </nav>
+
+      <div class="mt-20 lg:mt-0">
+        <div class="inline-flex items-center gap-2 rounded-full border border-brand-500/30 bg-brand-500/10 px-4 py-1.5 mb-6 backdrop-blur-sm">
+          <span class="relative flex h-2 w-2">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-400 opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-2 w-2 bg-brand-500"></span>
+          </span>
+          <span class="text-xs font-bold uppercase tracking-[0.2em] text-brand-300">Next-Gen AI Assistant</span>
+        </div>
+        <h1 class="max-w-3xl text-5xl font-black leading-[1.1] sm:text-6xl lg:text-7xl bg-clip-text text-transparent bg-gradient-to-b from-white to-zinc-400">
+          Master the <br/> <span class="text-brand-400 text-glow">Beautiful Game</span>
+        </h1>
+        <p class="mt-6 max-w-xl text-lg leading-relaxed text-zinc-400 font-light">
+          Elevate your football knowledge with our premium AI. Analyze tactics, player stats, historical data, and transfer rumors in a sleek, distraction-free environment.
+        </p>
+        <div class="mt-10 flex flex-col gap-4 sm:flex-row">
+          <a href="/register" class="group relative inline-flex items-center justify-center rounded-full bg-brand-500 px-8 py-4 font-bold text-zinc-950 transition-all duration-300 hover:bg-brand-400 hover:shadow-[0_0_30px_rgba(16,185,129,0.4)] overflow-hidden">
+            <span class="relative z-10">Start Analyzing</span>
+            <div class="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/40 to-transparent group-hover:animate-[shimmer_1.5s_infinite]"></div>
+          </a>
+          <a href="/login" class="inline-flex items-center justify-center rounded-full border border-zinc-700 bg-zinc-800/50 px-8 py-4 font-bold text-white backdrop-blur-sm transition-all duration-300 hover:bg-zinc-700 hover:border-zinc-500">
+            I have an account
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Side Preview -->
+    <div class="relative flex items-center justify-center animate-float">
+      <div class="absolute inset-0 bg-gradient-to-tr from-brand-600/20 to-blue-600/20 rounded-3xl blur-3xl"></div>
+      
+      <div class="glass-card relative w-full max-w-lg overflow-hidden rounded-2xl border border-zinc-700/50 shadow-2xl">
+        <!-- Mock Window Header -->
+        <div class="flex items-center gap-2 border-b border-zinc-800/80 bg-zinc-900/50 px-4 py-3 backdrop-blur-md">
+          <div class="flex gap-1.5">
+            <div class="h-3 w-3 rounded-full bg-red-500/80"></div>
+            <div class="h-3 w-3 rounded-full bg-yellow-500/80"></div>
+            <div class="h-3 w-3 rounded-full bg-green-500/80"></div>
+          </div>
+          <p class="mx-auto text-xs font-medium text-zinc-400">Match Analysis: El Clásico</p>
+        </div>
+
+        <div class="space-y-5 p-5 bg-zinc-950/40 backdrop-blur-md">
+          <div class="flex max-w-[85%] flex-col gap-2">
+            <div class="rounded-2xl rounded-tl-sm bg-zinc-800/80 border border-zinc-700/50 p-4 shadow-sm">
+              <p class="text-sm leading-relaxed text-zinc-200">How did Ancelotti counter the high press in the second half?</p>
+            </div>
+          </div>
+
+          <div class="flex max-w-[85%] flex-col gap-2 ml-auto">
+            <div class="rounded-2xl rounded-tr-sm bg-brand-600 border border-brand-500/50 p-4 shadow-[0_4px_20px_rgba(16,185,129,0.15)] text-white">
+              <p class="text-sm leading-relaxed">
+                He dropped Bellingham deeper to form a double pivot during build-up, allowing Vinicius to exploit the isolated right-back with quick diagonal runs.
+              </p>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-3 gap-3 pt-2">
+            <div class="rounded-xl border border-zinc-700/50 bg-zinc-800/40 p-3 text-center backdrop-blur-sm hover:bg-zinc-700/60 transition-colors cursor-pointer">
+              <p class="text-xl font-black text-brand-400">4-2-3-1</p>
+              <p class="mt-1 text-[10px] uppercase tracking-wider text-zinc-500">Formation</p>
+            </div>
+            <div class="rounded-xl border border-zinc-700/50 bg-zinc-800/40 p-3 text-center backdrop-blur-sm hover:bg-zinc-700/60 transition-colors cursor-pointer">
+              <p class="text-xl font-black text-brand-400">Mid</p>
+              <p class="mt-1 text-[10px] uppercase tracking-wider text-zinc-500">Block</p>
+            </div>
+            <div class="rounded-xl border border-zinc-700/50 bg-zinc-800/40 p-3 text-center backdrop-blur-sm hover:bg-zinc-700/60 transition-colors cursor-pointer">
+              <p class="text-xl font-black text-brand-400">Low</p>
+              <p class="mt-1 text-[10px] uppercase tracking-wider text-zinc-500">Risk</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="border-t border-zinc-800/80 bg-zinc-900/50 p-4 backdrop-blur-md">
+          <div class="flex items-center gap-3 rounded-full border border-zinc-700/50 bg-zinc-950 px-4 py-2 text-sm text-zinc-500 shadow-inner">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-brand-500"><path d="M12 2a10 10 0 1 0 10 10H12V2z"/><path d="M12 12 2.32 15.18"/></svg>
+            <span class="flex-1">Ask a tactical question...</span>
+            <div class="flex h-8 w-8 items-center justify-center rounded-full bg-brand-500 text-zinc-950 cursor-pointer hover:bg-brand-400 transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<style>
+  @keyframes shimmer {
+    100% {
+      transform: translateX(100%);
+    }
+  }
+</style>
