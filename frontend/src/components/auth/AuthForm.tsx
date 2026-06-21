@@ -25,7 +25,7 @@ export default function AuthForm({ mode }: AuthFormProps) {
             action: "Sign in",
             swapText: "New here?",
             swapAction: "Create an account",
-            swapHref: "/register",
+            swapHref: "/register/",
           }
         : {
             eyebrow: "Join the elite",
@@ -34,7 +34,7 @@ export default function AuthForm({ mode }: AuthFormProps) {
             action: "Create account",
             swapText: "Already registered?",
             swapAction: "Sign in",
-            swapHref: "/login",
+            swapHref: "/login/",
           },
     [mode],
   );
@@ -51,7 +51,7 @@ export default function AuthForm({ mode }: AuthFormProps) {
 
       const session = await login(email.trim(), password);
       saveSession(session.access_token, email.trim());
-      window.location.href = "/chat";
+      window.location.href = "/chat/";
     } catch (err) {
       setError(err instanceof Error ? err.message : "Authentication failed. Please try again.");
     } finally {

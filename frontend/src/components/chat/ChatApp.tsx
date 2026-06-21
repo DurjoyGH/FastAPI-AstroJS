@@ -35,7 +35,7 @@ export default function ChatApp() {
     const storedToken = getToken();
 
     if (!storedToken) {
-      window.location.href = "/login";
+      window.location.href = "/login/";
       return;
     }
 
